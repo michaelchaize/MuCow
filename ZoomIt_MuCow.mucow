@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HTMLWidget name="ZoomIt" formatNumber="1" localization="none" creator="Michael Chaize" defaultWidth="400" defaultHeight="300" minWidth="50" minHeight="50" maxWidth="900" maxHeight="500">
+    <parameters>
+        <url name="ZoomItURL" label="Zoom.it URL" defaultValue="http://zoom.it/ATPk"/>
+        <builtIn name="height"/>
+    </parameters>
+
+    <pageItemHTML>
+<![CDATA[
+<script src="{param_ZoomItURL}.js?width=auto&height={param_height}px"> </script>
+]]>
+    </pageItemHTML>
+</HTMLWidget>	
