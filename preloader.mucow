@@ -7,7 +7,7 @@
         <text name="myMessage" label="Message" defaultValue="Loading the page..." tooltip="This is the message that you'll display while the page is loading" />
         <text name="colorFont" defaultValue="#DDDDDD" label="Font color" tooltip="Color of the text"/>
         <text name="bgColor" defaultValue="#222222" label="Background color" tooltip="Background color of the preloader screen"/>
-       
+        <number name="bgOpacity" min="0" max="1" step="0.1" snap="0.1" defaultValue="0.8" label="Opacity" tooltip="Set the opacity of the preloader (from 0 to 1)"/>
         <text name="spinnerFirstColor" defaultValue="#E8FF00" label="Spinner Color" tooltip="Color of the spinner"/>
     </parameters>
     <headHTML >
@@ -25,6 +25,7 @@
     right:0;
     bottom:0;
     background-color:{param_bgColor}; /* change if the mask should have another color then white */
+    opacity:{param_bgOpacity};
     //z-index:99; /* makes sure it stays on top */
 }
 
